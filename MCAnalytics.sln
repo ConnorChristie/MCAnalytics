@@ -12,6 +12,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "MCAnalytics", "src\MCAnalytics\MCAnalytics.xproj", "{4F0C1F62-E8BC-4814-ACFC-0C60CD418E66}"
 EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "MCAnalytics.DB", "src\MCAnalytics.DB\MCAnalytics.DB.sqlproj", "{292A1FA5-E149-475A-B081-12B9F4F4E052}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -22,11 +24,18 @@ Global
 		{4F0C1F62-E8BC-4814-ACFC-0C60CD418E66}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4F0C1F62-E8BC-4814-ACFC-0C60CD418E66}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4F0C1F62-E8BC-4814-ACFC-0C60CD418E66}.Release|Any CPU.Build.0 = Release|Any CPU
+		{292A1FA5-E149-475A-B081-12B9F4F4E052}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{292A1FA5-E149-475A-B081-12B9F4F4E052}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{292A1FA5-E149-475A-B081-12B9F4F4E052}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{292A1FA5-E149-475A-B081-12B9F4F4E052}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{292A1FA5-E149-475A-B081-12B9F4F4E052}.Release|Any CPU.Build.0 = Release|Any CPU
+		{292A1FA5-E149-475A-B081-12B9F4F4E052}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{4F0C1F62-E8BC-4814-ACFC-0C60CD418E66} = {59B1FF40-088C-4677-B424-BFC95266A946}
+		{292A1FA5-E149-475A-B081-12B9F4F4E052} = {59B1FF40-088C-4677-B424-BFC95266A946}
 	EndGlobalSection
 EndGlobal

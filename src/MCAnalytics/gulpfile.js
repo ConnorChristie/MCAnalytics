@@ -1,11 +1,12 @@
-﻿/// <binding Clean='clean' />
+/// <binding BeforeBuild='min' Clean='clean' />
 "use strict";
 
 var gulp = require("gulp"),
     rimraf = require("rimraf"),
     concat = require("gulp-concat"),
     cssmin = require("gulp-cssmin"),
-    uglify = require("gulp-uglify");
+    uglify = require("gulp-uglify"),
+    _      = require("lodash");
 
 var paths = {
     webroot: "./wwwroot/"
@@ -42,4 +43,18 @@ gulp.task("min:css", function () {
         .pipe(gulp.dest("."));
 });
 
-gulp.task("min", ["min:js", "min:css"]);
+gulp.task("copy-assets", function ()
+{
+	const assets = {
+		js: [
+		],
+		css: [
+		]
+	};
+
+	_(assets).forEach(function (assets, type) {
+		gulp.src(assets).pipe(gulp.dest(`./wwwroot/lib/${type}`));
+	});
+});
+
+gulp.task("min", ["min:js", "min:css", "copy-assets"]);
