@@ -136,10 +136,8 @@ namespace MCAnalytics.Controllers
 		}
 
 		//
-		// POST: /Account/LogOff
-		[HttpPost]
-		[ValidateAntiForgeryToken]
-		public async Task<IActionResult> LogOff()
+		// GET: /Account/Logout
+		public async Task<IActionResult> Logout()
 		{
 			await _signInManager.SignOutAsync();
 			_logger.LogInformation(4, "User logged out.");

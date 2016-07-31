@@ -2,14 +2,11 @@
   "name": "ASP.NET",
   "private": true,
   "dependencies": {
-    "jquery": "2.1.4",
+    "jquery": "~2.2.4",
     "jquery-validation": "1.14.0",
     "jquery-validation-unobtrusive": "3.2.4",
-    "bootstrap": "3.3.5",
-    "bootswatch-dist": "yeti"
-  },
-  "resolutions": {
-    "jquery": ">= 1.7.2",
-    "bootstrap": "~3.3.6"
+	"components-font-awesome": "^4.6.3",
+	"bootstrap": "~3.3.7",
+	"metisMenu": "~1.1.3"
   }
 }
